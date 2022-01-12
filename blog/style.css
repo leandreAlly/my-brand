@@ -252,6 +252,43 @@ nav a:focus{
     order: -1;
 }
 
+.article-button{
+    display: flex;
+    margin-top: 1em;
+}
+.article-button,
+.like-button,
+.comment-button{
+    margin-right: 1.5em;
+    font-size: 20px;
+    text-align: center;
+}
+.like-button i {
+    color: #1da1f2;
+    font-size: 1em;
+}
+.comment-button i {
+    color: #1da1f2;
+    font-size: 1em;
+}
+.like-button i:hover{
+    color: #143774;
+}
+.comment-button i:hover{
+    color: #143774;   
+}
+.like-button span{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.comment-button span{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
 /* Login-form */
 
 .main-div-modify{
