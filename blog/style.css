@@ -64,6 +64,9 @@ a:focus{
 .article-title{
     font-size: 1.5rem;
 }
+.article-body{
+    font-family: 'Times New Roman', serif;
+}
 .article-read-more,
 .article-info{
     font-size: .875rem;
@@ -89,7 +92,9 @@ a:focus{
     font-family: 'ubuntu', sans-serif;
     font-weight: 700;
 }
-
+.widget-body{
+    font-family: 'Times New Roman', serif;
+}
 header{
     text-align: center; 
     background: #F0F8FF;
@@ -195,6 +200,9 @@ nav a:focus{
     padding-bottom: 2em;
     margin-bottom: 2em;
 }
+.article-featured.active{
+    width: 100%;
+}
   .article-recent{
     display: flex;
     flex-direction: column;
@@ -206,7 +214,31 @@ nav a:focus{
 }
 .article-recent-secondary{
     order: 1;
-}  
+}
+.btn-container{
+    margin: auto;
+    height:44px;
+    width:166.23px;
+    margin-left:10px ;
+}
+button {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color:white;
+  font-family:cursive;
+  box-sizing:border-box;
+  }
+  
+  button:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
 @media (min-width: 675px){
     .article-recent{
         flex-direction: row;
@@ -231,12 +263,20 @@ nav a:focus{
         order: -1;
     }
 }
+#more{
+    display: none;
+}
+#moreRecent{
+    display: none;
+}
+
 /* widgets */
 
 .sidebar-widget{
-    border: 20px solid #efefef;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     margin-bottom: 2em;
     padding: 1em;
+    border-radius: 15px;
 }
 .widget-recent-post{
     display: flex;
@@ -420,7 +460,44 @@ form .option_div{
   }
 
 
+/* Comment Form */
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .comment-section {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+  } 
 
+  .comment-section{
+      display: none;
+  }
 
 
 
