@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Admin Panel</title>
 </head>
@@ -17,11 +18,11 @@
         <ul class="nav-links">
             <li>
                 <a href="#"><i class='bx bx-grid-alt'></i>
-                <span class="links_name">Dashboard</span></a>
+                <span class="links_name" id="dashbord-show">Dashboard</span></a>
             </li>
             <li>
                 <a href="#"><i class='bx bx-add-to-queue'></i>
-                <span class="links_name">Add Article</span></a>
+                <span class="links_name" id="add-article">Add Article</span></a>
             </li>
             <li>
                 <a href="#"><i class='bx bxs-edit'></i>
@@ -59,6 +60,63 @@
             </div>
         </nav>
     </section>
-    <script src="script.js"></script>
+     
+    <!-- Add Article Form -->
+
+    <section>
+        <div class="form-container" id="container-show">
+                <div class="banner">
+                    <input type="file" accept="image/*" id="banner-upload" hidden>
+                    <label for="banner-upload" class="banner-upload-btn">
+                        <img src="./images/upload.png" alt="upload banner"></label>
+                </div>
+            <!-- <div class="article-image">
+                <h3>Banner Image</h3>
+                <img src="./images/newphoto.jpg" alt="">
+                <button class="btn"><i class='bx bx-upload'></i> Upload</button>
+            </div> -->
+            <div class="blog">
+                <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+                <textarea type="text" class="article" placeholder="start writing here..."></textarea>
+            </div>
+            <div class="blog-options">
+                <button class="btn dark publish-btn">Publish</button>
+                <input type="file" accept="image/*" id="image-upload" hidden>
+                <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
 </body>
 </html>
