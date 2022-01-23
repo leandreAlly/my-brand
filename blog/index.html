@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:Lora,wght@0,300;0,400;1,300;1,400&display=swap"
      rel="stylesheet">
      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="./style.css">
     <title>Leandre Blog</title>
 </head>
 <body>
     <header>
         <div class="container container-flex">
             <div class="back-button">
-                <a href="/index.html"><i class='bx bx-log-out'></i></a>
+                <a href="../home/index.html"><i class='bx bx-log-out'></i></a>
              </div>
             <div class="site-title">
                 <h1>Leandre Blog</h1>
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="#" class="current-page">Home</a></li>
                     <li><a href="#">Project</a></li>
-                    <li><a href="/blog/login-form/index.html">Log In</a></li>
+                    <li><a href="../login-form/index.html">Log In</a></li>
                 </ul>
         </div> <!--closing Container-->
     </header>
@@ -58,25 +58,18 @@
                     opposite. I began uncovering and understanding how to be wise and
                     appreciate the beauty in simplicity.</span></p>
                     <div class="comment-section">
-                        <form action="#">
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                      
-                          <label for="lname">Last Name</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          <label for="email">Email</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Enter Your email..">
-                      
-                          <label for="country">Country</label>
-                          <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                          </select>
-                      
-                          <label for="subject">Comment</label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          <input type="submit" value="Submit">
+                        <form id="form" action="#">
+                           <div class="input-name">
+                                <label for="user-name">Your Name</label>
+                                <input type="text" id="user-name"  placeholder="Your name..">
+                                <div class="error"></div>
+                           </div>
+                           <div class="input-message">
+                                <label for="subject">Comment</label>
+                                <textarea id="comment-field"  placeholder="Write Your Comment.." style="height:200px"></textarea>
+                                <div class="error"></div>
+                          </div>
+                          <input type="submit" id="myBtn" value="Submit">
                         </form>
                       </div>
                     <div class="btn-container">
@@ -262,6 +255,6 @@
             <span>Copyright | &#169; 2021 All Rights Reserved by <a href="#">Ally Leandre</a></span>
         </div>
       </footer>
-    <script src="./blog.js"></script>
+    <script src="../js/blog.js"></script>
 </body>
 </html>
