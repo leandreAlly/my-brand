@@ -23,7 +23,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
@@ -191,22 +191,25 @@
 
       </div>
       <div class="contact-form">
-        <form action="#">
+        <form id="send-message" action="#">
           <div class="topic">Send us a message</div>
           <div class="input-box">
-            <input type="text" name="name" required>
-            <label>Enter your name</label>
+            <input type="text" id="submit-name"  required>
+            <div class="error"></div>
+            <label>Enter your name</label>  
           </div>
           <div class="input-box">
-            <input type="text" name="email" required>
+            <input type="email" id="submit-email" required>
+            <div class="error"></div>
             <label>Enter your email</label>
           </div>
           <div class="message-box">
-           <textarea  cols="30" rows="10"></textarea>
+           <textarea id="submit-message" cols="30" rows="10"></textarea>
+           <div class="error"></div>
            <label>Enter your message</label>
         </div>
         <div class="button"> 
-          <button>Send Message</button>
+          <button type="submit" id="myBtn"  value="Submit">Send Message</button>
         </div>
         </form>
 
@@ -222,6 +225,6 @@
     <span>Copyright | &#169; 2021 All Rights Reserved by <a href="#">Ally Leandre</a></span>
   </div>
 </footer>
-<script src="./home.js"></script>
+<script src="../js/home.js"></script>
 </body>
 </html>

@@ -397,6 +397,7 @@ section .button button:hover{
   width: 100%;
   margin: 16px 0;
   position: relative;
+  margin-bottom: 40px;
 }
 .input-box input{
   position: absolute;
@@ -427,7 +428,7 @@ section .button button:hover{
 }
 .input-box input:focus ~ label,
 .input-box input:valid ~ label{
-  top: 0;
+  top:0;
   left: 12px;
   display: 14px;
   color: rgb(0, 70,0);
@@ -436,17 +437,20 @@ section .button button:hover{
 .message-box{
   min-height: 100px;
   position: relative;
+  margin-bottom:50px;
 }
 .message-box textarea{
   position: absolute;
   height: 100%;
   width: 100%;
+  top: 10px;
   resize: none;
   background: #fae9fb;
   border: 2px solid transparent;
   border-radius: 6px;
   outline: none;
   transition: all 0.3s ease;
+
 }
 .message-box textarea:focus{
   border-color: rgb(0, 70,0);;
@@ -468,6 +472,34 @@ section .button button:hover{
   font-size: 14px;
   background: #fff;
 }
+ .input-box .error{
+  position: absolute;
+  top: 60px;
+  white-space: nowrap;
+  color: red;
+  }
+ .message-box .error{
+  position: absolute;
+  top: 110px;
+  white-space: nowrap;
+  color: red;
+}
+.input-box.error input {
+  border-color: #dc3545;
+}
+
+.input-box.success input {
+  border-color: #28a745;
+}
+/* Message Box */
+.message-box.error input {
+  border-color: #dc3545;
+}
+.message-box.success input {
+  border-color: #28a745;
+}
+
+
 /* Footer CSS */
 footer{
   background: #4070f4;

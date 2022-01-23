@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:Lora,wght@0,300;0,400;1,300;1,400&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <link rel="stylesheet" href="./style.css">
+    <title>Leandre Blog</title>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <div class="site-title">
+                <h1>Leandre Blog</h1>
+                <p class="subtitle">Winning is the only Option!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../blog/index.html" class="current-page">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
+        </div> <!--closing Container-->
+    </header>
+    <div class="main-div-modify">
+    <div class="main-div">
+        <div class="form-title">Login Form</div>
+        <div class="social_icons">
+            <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+            <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+        </div>
+        <form action="/Admin-panel/index.html">
+            <div class="input_box">
+                <input type="email" id="input-email" placeholder="Email" required>
+                <div class="icon"><i class="fas fa-user"></i></div>
+                <div class="error"></div>
+            </div>
+            <div class="input_box">
+                <input type="password" id="input-password" placeholder="Password" required>
+                <div class="icon"><i class="fas fa-lock"></i></div>
+                <div class="error"></div>
+            </div>
+            <div class="option_div">
+                <div class="check_box">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <div class="forget_div">
+                     <a href="#">Forget Password</a>
+                </div>
+            </div>
+            <div class="input_box button">
+                <input type="submit" id="log-btn" value="Login">
+            </div>
+
+            <div class="sign_up">
+                 Not a member? <a href="../signup/index.html">SignUp now</a>
+            </div>
+        </form>
+    </div>
+</div>
+    <footer>
+        <div class="text footer-modify">
+            <span>Copyright | &#169; 2021 All Rights Reserved by <a href="#">Ally Leandre</a></span>
+        </div>
+      </footer>
+    
+      <script src="../js/login.js"></script>
+</body>
+</html>
